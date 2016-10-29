@@ -1,0 +1,24 @@
+Portal2 = Flat Admin V.3 Bootstrap Template
+
+Template URL:
+https://github.com/tui2tone/flat-admin-bootstrap-templates
+
+* jQuery version that comes with Flat Admin V.2 is newer than the VS2015 version
+
+* Bootstrap version that comes with Flat Admin V.2 is newer than the VS2015 version
+
+*Char.js js file was in dist, the original path is incorrect
+
+Keep an eye out:
+1) Left jquery.validate in BundleConfig (decided to remove but didn't fix my 3 remaining js errors)
+
+2) Left respond.js in the BundleConfig
+
+3) The font urls at the top of index.html.  Find out if you need them and how to download them locally
+
+4) Template was missing so closing divs at the end, so I added them
+
+5) Went ahead and removed site.css bundle
+
+6) Removed modernizr
+

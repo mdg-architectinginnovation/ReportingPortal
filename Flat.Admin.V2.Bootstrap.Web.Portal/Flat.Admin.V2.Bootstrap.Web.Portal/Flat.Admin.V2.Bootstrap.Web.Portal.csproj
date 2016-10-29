@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52A31673-9C1F-47F3-BB1C-425A352587E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flat.Admin.V2.Bootstrap.Web.Portal</RootNamespace>
+    <AssemblyName>Flat.Admin.V2.Bootstrap.Web.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="bower.json" />
+    <Content Include="dist\.DS_Store" />
+    <Content Include="dist\lib\fonts\fontawesome-webfont.eot" />
+    <Content Include="dist\lib\fonts\fontawesome-webfont.ttf" />
+    <Content Include="dist\lib\fonts\fontawesome-webfont.woff" />
+    <Content Include="dist\lib\fonts\fontawesome-webfont.woff2" />
+    <Content Include="dist\lib\fonts\FontAwesome.otf" />
+    <Content Include="dist\lib\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\lib\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\lib\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="dist\lib\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\themes.css" />
+    <Content Include="dist\css\themes\flat-blue.css" />
+    <Content Include="dist\css\themes\flat-green.css" />
+    <Content Include="dist\html\components\chartjs.html" />
+    <Content Include="dist\html\components\pricing-table.html" />
+    <Content Include="dist\html\form\ui-kits.html" />
+    <Content Include="dist\html\icons\font-awesome.html" />
+    <Content Include="dist\html\icons\glyphicons.html" />
+    <Content Include="dist\html\index.html" />
+    <Content Include="dist\html\license.html" />
+    <Content Include="dist\html\pages\index.html" />
+    <Content Include="dist\html\pages\login.html" />
+    <Content Include="dist\html\table\datatable.html" />
+    <Content Include="dist\html\table\table.html" />
+    <Content Include="dist\html\ui-kits\alert.html" />
+    <Content Include="dist\html\ui-kits\button.html" />
+    <Content Include="dist\html\ui-kits\card.html" />
+    <Content Include="dist\html\ui-kits\grid.html" />
+    <Content Include="dist\html\ui-kits\list.html" />
+    <Content Include="dist\html\ui-kits\loader.html" />
+    <Content Include="dist\html\ui-kits\modal.html" />
+    <Content Include="dist\html\ui-kits\other.html" />
+    <Content Include="dist\html\ui-kits\panel.html" />
+    <Content Include="dist\html\ui-kits\step.html" />
+    <Content Include="dist\html\ui-kits\theming.html" />
+    <Content Include="dist\img\app-header-bg.jpg" />
+    <Content Include="dist\img\backdrop\micro_carbon.png" />
+    <Content Include="dist\img\backdrop\tactile_noise.png" />
+    <Content Include="dist\img\bg.jpg" />
+    <Content Include="dist\img\bg\picjumbo.com_HNCK3558.jpg" />
+    <Content Include="dist\img\contact-us-bg.jpg" />
+    <Content Include="dist\img\profile\picjumbo.com_HNCK4153_resize.jpg" />
+    <Content Include="dist\img\profile\profile-1.jpg" />
+    <Content Include="dist\img\screenshots\dashboard.png" />
+    <Content Include="dist\img\screenshots\landing.png" />
+    <Content Include="dist\img\screenshots\login.png" />
+    <Content Include="dist\img\screenshots\theming.png" />
+    <Content Include="dist\img\thumbnails\picjumbo.com_HNCK4737.jpg" />
+    <Content Include="dist\img\thumbnails\picjumbo.com_IMG_3241.jpg" />
+    <Content Include="dist\img\thumbnails\picjumbo.com_IMG_4566.jpg" />
+    <Content Include="dist\js\alert.js" />
+    <Content Include="dist\js\app.js" />
+    <Content Include="dist\js\button.js" />
+    <Content Include="dist\js\card.js" />
+    <Content Include="dist\js\chartjs.js" />
+    <Content Include="dist\js\index.js" />
+    <Content Include="dist\js\list.js" />
+    <Content Include="dist\js\modal.js" />
+    <Content Include="dist\js\theming.js" />
+    <Content Include="dist\lib\css\animate.min.css" />
+    <Content Include="dist\lib\css\bootstrap-switch.min.css" />
+    <Content Include="dist\lib\css\bootstrap.min.css" />
+    <Content Include="dist\lib\css\checkbox3.min.css" />
+    <Content Include="dist\lib\css\dataTables.bootstrap.css" />
+    <Content Include="dist\lib\css\font-awesome.min.css" />
+    <Content Include="dist\lib\css\jquery.dataTables.min.css" />
+    <Content Include="dist\lib\css\select2.min.css" />
+    <Content Include="dist\lib\fonts\fontawesome-webfont.svg" />
+    <Content Include="dist\lib\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\lib\js\ace\ace.js" />
+    <Content Include="dist\lib\js\ace\mode-html.js" />
+    <Content Include="dist\lib\js\ace\theme-github.js" />
+    <Content Include="dist\lib\js\bootstrap-switch.min.js" />
+    <Content Include="dist\lib\js\bootstrap.min.js" />
+    <Content Include="dist\lib\js\Chart.min.js" />
+    <Content Include="dist\lib\js\dataTables.bootstrap.min.js" />
+    <Content Include="dist\lib\js\jquery.dataTables.min.js" />
+    <Content Include="dist\lib\js\jquery.matchHeight-min.js" />
+    <Content Include="dist\lib\js\jquery.min.js" />
+    <Content Include="dist\lib\js\select2.full.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>47959</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47959/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

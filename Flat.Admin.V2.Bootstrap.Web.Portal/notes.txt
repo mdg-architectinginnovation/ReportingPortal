@@ -1,0 +1,1 @@
+This Portal is just an empty ASP.Net project, with no authentication, web api or views.  All it has is the Flat Admin V2 files and it is solely for being able to navigate the v2 template to see what each screen looks like since the demo site has been replaced with V3.
